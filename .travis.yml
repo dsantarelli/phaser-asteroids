@@ -1,0 +1,21 @@
+#https://medium.com/@hamidihamza/add-coverage-to-your-angular-project-ci-fd30ccf38a31
+env:
+  global:
+    - CODECOV_TOKEN="349ccc7b-2250-4ca1-8cf8-8e4c56580937"
+language: node_js
+node_js:
+  - "12"
+dist: trusty
+sudo: required
+addons:
+  chrome: stable
+cache:
+  yarn: true
+  directories:
+    - node_modules
+install:
+  - yarn
+script:
+  - yarn test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
