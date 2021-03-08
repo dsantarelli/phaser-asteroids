@@ -12,8 +12,8 @@ This is a simple implementation of the [Asteroids](https://en.wikipedia.org/wiki
 - Your highest score is saved on your browser [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
 ## Development goals
-- Leverage TypeScript's type system as much as possible. :rocket:
-- Building and running game through [webpack](https://webpack.js.org/) <img src="https://emojis.slackmojis.com/emojis/images/1486450004/1706/webpack.png" width="16" height="16" />
+- Leverage [TypeScript](https://www.typescriptlang.org/)'s type system as much as possible. :rocket:
+- Building and running the videogame through [webpack](https://webpack.js.org/) <img src="https://emojis.slackmojis.com/emojis/images/1486450004/1706/webpack.png" width="16" height="16" />
 - Learning how to make a Phaser videogame testable (this is the hard part! :sweat_smile:)
 - Automated testing through [Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome), [Karma](https://karma-runner.github.io/latest/index.html), [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/) :metal:
 
