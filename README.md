@@ -6,10 +6,12 @@ This is a simple implementation of the [Asteroids](https://en.wikipedia.org/wiki
 | ------------- |:-------------:|:-------------:|
 | main      	| [![Build Status](https://travis-ci.com/dsantarelli/phaser-asteroids.svg?branch=main)](https://travis-ci.com/dsantarelli/phaser-asteroids) | [![codecov](https://codecov.io/gh/dsantarelli/phaser-asteroids/branch/main/graph/badge.svg)](https://codecov.io/gh/dsantarelli/phaser-asteroids)
 
-## Features
+## Game features
 - Each time you hit an asteroid, it breaks down into smaller and faster pieces. Try not to be hit! 
 - The game is over when you have no more lives or if you destroy all the asteroids.
 - Your highest score is saved on your browser [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+
+![](demo.gif)
 
 ## Development goals
 - Leverage [TypeScript](https://www.typescriptlang.org/)'s type system as much as possible. :rocket:
@@ -25,17 +27,17 @@ https://nodejs.org/
 
 ### 2. Install dependencies (optionally you can install [yarn](https://yarnpkg.com/))
 
-Run ```npm install``` or ```yarn```
+Run ```npm install``` or ```yarn install```
 
 ### 3. Run the development server
 
 Run ```npm run dev``` or  ```yarn run dev```
 
 This will run a server so you can run the game in a browser. It will also start a watch process, so you can change the source and the process will recompile and refresh the browser automatically.
-To run the game, open your browser and enter [http://localhost:8080/](http://localhost:8080/) into the address bar.
+To run the game, open your browser and enter [http://localhost:8080/](http://localhost:8080/) into the address bar. If you want to change the port, please edit the [webpack.config.js](https://github.com/dsantarelli/phaser-asteroids/blob/main/webpack.config.js) file.
 
 ### 4. Run the tests
 
 Run ```npm run test``` or ```yarn run test```
 
-This will launch the Karma test runner using the Headless Chrome browser.
+This will launch the Karma test runner which uses the Headless Chrome browser.
